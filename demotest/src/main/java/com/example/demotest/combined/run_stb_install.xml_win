@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite Mobile" parallel="tests" thread-count="2">
+
+    <!--test name="HaTV">
+        <parameter name="Device_" value="192.168.1.47:5555" />
+        <parameter name="UDID_" value="192.168.1.47:5555" />
+        <parameter name="platformVersion_" value="8.0" />
+        <parameter name="port_" value="4723" />
+        <classes>
+            <class name="com.example.demotest.combined.stb_album_test" />
+        </classes>
+
+
+    </test-->
+
+    <!--test name="HTC U11 plus test">
+        <parameter name="Device_" value="HTC U11 plus" />
+        <parameter name="UDID_" value="FA7CK1E00606" />
+        <parameter name="platformVersion_" value="8.0" />
+        <parameter name="port_" value="4723" />
+        <classes>
+            <class name="com.example.demotest.combined.mobile_album_test" />
+        </classes>
+    </test-->
+
+    <test name="HTC U ultra upload album test">
+        <parameter name="Device_" value="HTC U ultra" />
+        <parameter name="UDID_" value="FA71S1701819" />
+        <parameter name="platformVersion_" value="8.0" />
+        <parameter name="port_" value="4723" />
+        <parameter name="app_" value="D:\e2e\home_TV_app\mabowhome_e2e\apk\app-dev-dev-debug-1392-v3.36.0.apk" />
+        <classes>
+            <class name="com.example.demotest.combined.mobile_install_test" />
+        </classes>
+    </test>
+
+    <test name="HaTV 林俊宏">
+        <parameter name="Device_" value="192.168.5.5:5555" />
+        <parameter name="UDID_" value="192.168.5.5:5555" />
+        <parameter name="platformVersion_" value="8.0" />
+        <parameter name="port_" value="4725" />
+        <parameter name="app_" value="D:\e2e\home_TV_app\mabowhome_e2e\apk\Liveinteraction-dev-debug-signed-1458-v2.72.0.apk" />
+        <classes>
+            <class name="com.example.demotest.combined.stb_install_test" />
+        </classes>
+    </test>
+
+</suite>
