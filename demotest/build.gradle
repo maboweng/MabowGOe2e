@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation "com.google.guava:guava:23.0"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'junit:junit:4.12'
+    implementation files('src\\main\\java\\libs\\java-client-7.3.0.jar')
+    implementation files('src\\main\\java\\libs\\selenium-server-standalone-3.141.59.jar')
+    implementation files('src\\main\\java\\libs\\commons-lang3-3.10.jar')
+    //implementation files('src\\main\\java\\libs\\java-client-3.2.0.jar')
+    implementation 'org.testng:testng:6.9.6'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
